@@ -3,7 +3,7 @@ showcase:
   enable: true
   title: "Welcome at Noematic!"
   subtitle: "The IT at your service"
-  description: "13 years of experience"
+  description: "17 years of experience"
 
   image:
     url: "images/logo/noematic.svg"
@@ -14,7 +14,10 @@ showcase:
       url: "https://www.linkedin.com/company/noematic/"
 
     - icon: "github"
-      url: "https://github.com/noematic-fr"
+      url: "https://github.com/noematic-eu"
+
+    - icon: "coffee"
+      url: "https://www.buymeacoffee.com/noematic"
 
 # about
 about:
