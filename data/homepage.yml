@@ -3,7 +3,7 @@ showcase:
   enable: true
   title: "Welcome at Noematic!"
   subtitle: "The IT at your service"
-  description: "17 years of experience"
+  description: "18 years of experience"
 
   image:
     url: "images/logo/noematic.svg"
@@ -16,8 +16,8 @@ showcase:
     - icon: "github"
       url: "https://github.com/noematic-eu"
 
-    - icon: "cup-hot"
-      url: "https://www.buymeacoffee.com/noematic"
+    - icon: "x"
+      url: "https://x.com/Noematic_eu"
 
 # about
 about:
@@ -189,12 +189,12 @@ contact:
   #phone:
   #  title: "Phone Number"
   #  number: "+41 (44) 505 10 99"
-  #email:
-  #  title: "Email"
-  #  email: '<a href="mailto:team@radity.com">team@radity.com</a>'
+  email:
+    title: "Email"
+    email: '<a href="mailto:contact@noematic.eu">eMail</a>'
   address:
     title: "Address"
-    address: "32 rue Chateaugontier 49100 Angers, France"
+    address: "28 avenue du Maréchal Lyautey 49240 Avrillé, France"
   #button:
   #  icon: "icon-mail-fill"
   #  btnText: "Send Message"
