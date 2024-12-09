@@ -1,8 +1,8 @@
 # showcase
 showcase:
   enable: true
-  title: "Welcome at Noematic!"
-  subtitle: "The IT at your service"
+  title: "Welcome!"
+  subtitle: ""
   description: "18 years of experience"
 
   image:
@@ -10,13 +10,16 @@ showcase:
     alt: "Noematic"
 
   socialLinks:
+    - icon: "qi"
+      url: "https://qi.noematic.eu"
+
     - icon: "linkedin"
       url: "https://www.linkedin.com/company/noematic/"
 
     - icon: "github"
       url: "https://github.com/noematic-eu"
 
-    - icon: "x"
+    - icon: "xcom"
       url: "https://x.com/Noematic_eu"
 
 # about
