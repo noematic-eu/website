@@ -1,5 +1,5 @@
 baseURL = "https://noematic.eu/"
-languageCode = "fr-fr"
+languageCode = "en-en"
 theme = "noematic"
 
 # navigation
@@ -26,4 +26,4 @@ theme = "noematic"
     text1 = "Noematic"
 
   [params.footer]
-      copyright = "2024 © Noematic. All rights reserved."
+      copyright = "2025 © Noematic. All rights reserved."
