@@ -2,7 +2,7 @@
 showcase:
   enable: true
   title: "Welcome!"
-  subtitle: ""
+  subtitle: "<a href='https://qi.noematic.eu'>Qualitativ Indie</a>"
   description: "18 years of experience"
 
   image:
@@ -10,9 +10,6 @@ showcase:
     alt: "Noematic"
 
   socialLinks:
-    - icon: "qi"
-      url: "https://qi.noematic.eu"
-
     - icon: "linkedin"
       url: "https://www.linkedin.com/company/noematic/"
 
