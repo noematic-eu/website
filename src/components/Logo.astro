@@ -1,0 +1,17 @@
+---
+import { LOGO_ALT, LOGO_SRC } from '../site';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<div class="noe-logo-wrap">
+  <div class="noe-logo-glow" aria-hidden="true"></div>
+  <img
+    class="noe-logo"
+    src={`${base}${LOGO_SRC.replace(/^\//, '')}`}
+    alt={LOGO_ALT}
+    width="320"
+    height="96"
+    fetchpriority="high"
+  />
+</div>
