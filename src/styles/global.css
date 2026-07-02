@@ -62,67 +62,60 @@ a {
   gap: 2rem;
 }
 
-/* ── Logo glow (actual SVG, not a CSS sphere) ── */
+/* ── Logo — single SVG, noematic-1 canvas, concentric circles ── */
 
-.noe-logo-wrap {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
+.noe-logo-lockup {
+  width: min(75vw, 500px);
+  aspect-ratio: 500 / 150.39;
+  margin: 0 auto;
+}
+
+.noe-logo-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  shape-rendering: geometricPrecision;
 }
 
 .noe-logo-glow {
-  position: absolute;
-  left: 12%;
-  top: 50%;
-  width: clamp(72px, 18vw, 110px);
-  height: clamp(72px, 18vw, 110px);
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(200, 210, 220, 0.55) 0%,
-    rgba(140, 150, 160, 0.35) 35%,
-    rgba(61, 214, 198, 0.12) 65%,
-    transparent 75%
-  );
-  filter: blur(14px);
-  animation: noe-logo-halo 5s ease-in-out infinite;
-  pointer-events: none;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
-.noe-logo {
-  position: relative;
-  z-index: 1;
-  width: min(75vw, 420px);
-  height: auto;
-  animation: noe-logo-glow 5s ease-in-out infinite;
+.noe-logo-glow--back {
+  animation:
+    noe-logo-glow-pulse 8s ease-in-out infinite,
+    noe-logo-glow-drift 20s ease-in-out infinite;
 }
 
-@keyframes noe-logo-glow {
-  0%, 100% {
-    filter:
-      drop-shadow(0 0 6px rgba(180, 190, 200, 0.45))
-      drop-shadow(0 0 16px rgba(140, 150, 160, 0.35))
-      drop-shadow(0 0 32px rgba(61, 214, 198, 0.12));
-  }
-  50% {
-    filter:
-      drop-shadow(0 0 10px rgba(210, 220, 230, 0.7))
-      drop-shadow(0 0 24px rgba(160, 170, 180, 0.5))
-      drop-shadow(0 0 48px rgba(61, 214, 198, 0.22));
-  }
+.noe-logo-glow--core {
+  mix-blend-mode: screen;
+  animation:
+    noe-logo-glow-pulse 6s ease-in-out infinite reverse,
+    noe-logo-glow-drift 14s ease-in-out infinite reverse;
 }
 
-@keyframes noe-logo-halo {
-  0%, 100% {
-    opacity: 0.65;
-    transform: translate(-50%, -50%) scale(1);
+@keyframes noe-logo-glow-pulse {
+  0%, 100% { opacity: 0.38; }
+  50% { opacity: 0.78; }
+}
+
+@keyframes noe-logo-glow-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(10px, -7px) scale(1.04); }
+  50% { transform: translate(-8px, 9px) scale(0.97); }
+  75% { transform: translate(6px, 5px) scale(1.02); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .noe-logo-glow--back,
+  .noe-logo-glow--core {
+    animation: none;
   }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.08);
+
+  .noe-logo-anim {
+    display: none;
   }
 }
 
@@ -160,25 +153,26 @@ a {
 
 .noe-social a {
   display: block;
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition: transform 0.25s ease;
   text-decoration: none;
 }
 
 .noe-social a:hover {
   transform: translateY(-3px);
-  filter: drop-shadow(0 4px 12px var(--noe-aqua-glow));
 }
 
 .noe-social-icon {
   display: block;
   width: 2.75rem;
   height: 2.75rem;
-  opacity: 0.85;
-  transition: opacity 0.2s;
+  opacity: 0.9;
+  filter: brightness(0) invert(0.92);
+  transition: opacity 0.2s ease, filter 0.25s ease;
 }
 
 .noe-social a:hover .noe-social-icon {
   opacity: 1;
+  filter: brightness(0) invert(1) drop-shadow(0 4px 12px var(--noe-aqua-glow));
 }
 
 .noe-section {
@@ -371,13 +365,3 @@ footer {
   text-align: center;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .noe-logo,
-  .noe-logo-glow {
-    animation: none;
-  }
-
-  .noe-logo {
-    filter: drop-shadow(0 0 12px rgba(160, 170, 180, 0.4));
-  }
-}
