@@ -69,6 +69,11 @@ export const content = {
       },
     ] satisfies Service[],
   },
+  newsletter: {
+    title: 'Newsletter',
+    subtitle:
+      'Product updates, engineering notes, and studio behind-the-scenes — once a month, no spam.',
+  },
   products: {
     title: 'Published products',
     subtitle:
