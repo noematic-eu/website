@@ -1,4 +1,4 @@
-export type ProductStatus = 'beta' | 'live' | 'studio';
+export type ProductStatus = 'pilot' | 'live' | 'studio' | 'beta';
 
 export interface SocialLink {
   icon: 'qi' | 'linkedin' | 'github' | 'xcom';
@@ -75,27 +75,42 @@ export const content = {
       'Product updates, engineering notes, and studio behind-the-scenes — once a month, no spam.',
   },
   products: {
-    title: 'Published products',
+    title: 'Tools & products',
     subtitle:
-      'Live projects from the Noematic portfolio — try them, break them, tell us what you think.',
+      'Small products for problems I hit myself — pilots and live tools under our control. Honest status, no fake public betas.',
+    statusLabels: {
+      pilot: 'pilot',
+      live: 'live',
+      studio: 'studio',
+      beta: 'beta',
+    } satisfies Record<ProductStatus, string>,
     items: [
       {
         name: 'Living Memoirs',
         tagline:
-          "Guide family interviews, structure the story, then chat with the biography — grounded in the author's own words.",
+          "Guide family interviews, structure the story, then chat with the biography — grounded in the author's own words. Product pilot, invite-first.",
         url: 'https://living-memoirs.noematic.eu',
-        status: 'beta',
+        status: 'pilot',
         tags: ['SaaS', 'AI', 'RGPD'],
-        cta: 'Try the demo',
+        cta: 'Visit site',
       },
       {
-        name: 'WatchNo.co',
+        name: 'WatchNoCode',
         tagline:
-          'Lightweight RUM for no-code builders — JS errors, failed fetches, and Core Web Vitals without Datadog complexity.',
+          'Lightweight RUM for no-code builders — JS errors, failed fetches, and Core Web Vitals without Datadog. Free pilot; no public pricing yet.',
         url: 'https://watchnocode.noematic.eu',
-        status: 'beta',
+        status: 'pilot',
         tags: ['SaaS', 'Observability', 'Webflow'],
-        cta: 'View pricing',
+        cta: 'Join the pilot',
+      },
+      {
+        name: 'Ciblo',
+        tagline:
+          'Inverted marketplace with AI matching — post your need for services, second-hand, or rentals, and get relevant offers. Preprod pilot.',
+        url: 'https://ciblo.noematic.eu',
+        status: 'pilot',
+        tags: ['SaaS', 'AI', 'Marketplace'],
+        cta: 'Visit pilot',
       },
       {
         name: 'AI RAG Agent',
