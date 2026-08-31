@@ -224,6 +224,12 @@ export const content = {
   footer: {
     rights: 'All rights reserved.',
   },
+  notFound: {
+    title: 'Page not found — Noematic',
+    heading: 'Page not found',
+    body: 'That address does not exist on noematic.eu.',
+    cta: 'Back to home',
+  },
   socialLinks: [
     { icon: 'qi', url: 'https://qi.noematic.eu/', label: 'Qi' },
     { icon: 'linkedin', url: 'https://www.linkedin.com/company/noematic/', label: 'LinkedIn' },
@@ -244,7 +250,7 @@ export const content = {
       langHref: 'https://noematic.fr/media-cataloger',
     },
     hero: {
-      kicker: 'Desktop catalog · paid beta 0.2',
+      kicker: 'Desktop catalog · beta 0.2',
       title: 'Know where your files live — even when the disk is unplugged.',
       lead: 'Media Cataloger indexes disks and libraries on your machine, including volumes that are offline. Search across them, find duplicates without guessing, and see what to plug in, copy, or verify next. It does not replace a backup.',
       status: 'beta',
@@ -341,7 +347,7 @@ export const content = {
     pricing: {
       title: 'Licenses, fulfilled by email',
       subtitle:
-        'No public download of the old 0.0.1 Qi builds. Version 0.2 is a paid beta: we send macOS, Windows, or Linux builds and a signed key after you pick a plan.',
+        'No public download of the old 0.0.1 Qi builds. 0.2 is beta: Hobby is free (one volume); Personal and Studio are paid. We send a macOS, Windows, or Linux build — and a signed key for paid plans.',
       note: 'Pay by invoice (SEPA or card, arranged by email). One Personal license is for you, on your machines. Studio covers one operator plus remote/RAG/vision. Prices in euros, excl. VAT if applicable.',
       plans: [
         {
