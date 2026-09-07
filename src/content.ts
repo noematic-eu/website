@@ -98,11 +98,11 @@ export const content = {
   meta: {
     title: 'Noematic — Part-time Go backend missions',
     description:
-      'Independent engineer in Avrillé: Go backends, Kubernetes, observability. 3–4 days/week, Angers or remote France, occasional travel.',
+      'Independent engineer in Avrillé: Go backends, Kubernetes, observability. Shared time, Angers or remote France, occasional travel.',
   },
   hero: {
     title: 'Independent engineer',
-    subtitle: 'Go backend & platform · 3–4 days/week · Angers or remote',
+    subtitle: 'Go backend & platform · shared time · Angers or remote',
     description:
       'Part-time missions: production Go services, Kubernetes, observability. The rest of the calendar I teach and build my own tools — those live on Qi.',
   },
@@ -111,8 +111,8 @@ export const content = {
     subtitle: 'Part-time on purpose — not a disguised full-time CDI.',
     items: [
       {
-        title: '3–4 days / week',
-        body: 'I teach at ESPL / My Digital School (SysML, embedded, software) — that sets the rhythm. Remaining days = my own projects.',
+        title: 'Shared time',
+        body: 'I teach at ESPL / My Digital School (SysML, embedded, software) and I build my own projects. The split is not even — not across the week, not across the year.',
       },
       {
         title: 'Angers or remote',
@@ -223,6 +223,8 @@ export const content = {
   },
   footer: {
     rights: 'All rights reserved.',
+    legal: 'Legal',
+    legalHref: '/legal/',
   },
   notFound: {
     title: 'Page not found — Noematic',
