@@ -349,7 +349,7 @@ export const content = {
     pricing: {
       title: 'Licenses, fulfilled by email',
       subtitle:
-        'No public download of the old 0.0.1 Qi builds. 0.2 is beta: Hobby is free (one volume); Personal and Studio are paid. We send a macOS, Windows, or Linux build — and a signed key for paid plans.',
+        'The 0.0.1 public builds remain on Qi until we warn before replacing them. 0.2 is beta: Hobby is free (one volume); Personal and Studio are paid. We send a macOS, Windows, or Linux build — and a signed key for paid plans.',
       note: 'Pay by invoice (SEPA or card, arranged by email). One Personal license is for you, on your machines. Studio covers one operator plus remote/RAG/vision. Prices in euros, excl. VAT if applicable.',
       plans: [
         {
@@ -434,7 +434,7 @@ export const content = {
         },
         {
           q: 'How do I get the app?',
-          a: 'Email contact@noematic.eu with the plan you want (Hobby, Personal, Studio), your name, and your OS. We send a build and, for paid plans, a license key. The 0.0.1 zips on Qi are retired.',
+          a: 'Email contact@noematic.eu with the plan you want (Hobby, Personal, Studio), your name, and your OS. We send a build and, for paid plans, a license key. The 0.0.1 public zips are still on Qi.',
         },
         {
           q: 'What is NeoFinder-like about it?',
