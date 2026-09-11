@@ -240,21 +240,21 @@ export const content = {
   ] satisfies SocialLink[],
   mediaCataloger: {
     meta: {
-      title: 'Media Cataloger — index disks & libraries | Noematic',
+      title: 'DiskShelf — index disks & libraries | Noematic',
       description:
-        'Desktop catalog for disks and libraries, including offline volumes. Find files and duplicates, get placement advice, stay local. Paid beta 0.2 for macOS, Windows, and Linux.',
+        'DiskShelf (formerly Media Cataloger): local disk catalog, including offline volumes. Licenses already emailed (0.2 beta) still work. macOS (Swift + nmcui), Windows and Linux (Go).',
     },
     nav: {
       studio: 'Noematic',
-      product: 'Media Cataloger',
+      product: 'DiskShelf',
       langLabel: 'FR',
       langCode: 'fr',
       langHref: 'https://noematic.fr/media-cataloger',
     },
     hero: {
-      kicker: 'Desktop catalog · beta 0.2',
+      kicker: 'DiskShelf · formerly Media Cataloger · beta 0.2',
       title: 'Know where your files live — even when the disk is unplugged.',
-      lead: 'Media Cataloger indexes disks and libraries on your machine, including volumes that are offline. Search across them, find duplicates without guessing, and see what to plug in, copy, or verify next. It does not replace a backup.',
+      lead: 'DiskShelf (formerly Media Cataloger) puts your disks on a local shelf, including volumes that are offline. Search, find duplicates without guessing, see what to plug in. Not a DAM, not iTunes, not a backup app. Any license already emailed (0.2 beta) still works.',
       status: 'beta',
       version: '0.2 · macOS · Windows · Linux · FR/EN',
       imageAlt:
@@ -349,7 +349,7 @@ export const content = {
     pricing: {
       title: 'Licenses, fulfilled by email',
       subtitle:
-        'The 0.0.1 public builds remain on Qi until we warn before replacing them. 0.2 is beta: Hobby is free (one volume); Personal and Studio are paid. We send a macOS, Windows, or Linux build — and a signed key for paid plans.',
+        'The 0.0.1 public builds remain on Qi (Media Cataloger card) until a DiskShelf zip ships. 0.2 is beta: Hobby is free (one volume); Personal and Studio are paid. We send a macOS build (Swift + nmcui), or Windows / Linux (Go) — and a signed key for paid plans. Licenses already sent under the Media Cataloger name still work.',
       note: 'Pay by invoice (SEPA or card, arranged by email). One Personal license is for you, on your machines. Studio covers one operator plus remote/RAG/vision. Prices in euros, excl. VAT if applicable.',
       plans: [
         {
@@ -359,7 +359,7 @@ export const content = {
           blurb: 'Prove the catalog on one volume before you pay.',
           cta: {
             label: 'Request Hobby',
-            href: 'mailto:contact@noematic.eu?subject=Media%20Cataloger%20%E2%80%94%20Hobby',
+            href: 'mailto:contact@noematic.eu?subject=DiskShelf%20(Media%20Cataloger)%20%E2%80%94%20Hobby',
           },
           includes: [
             '1 local volume',
@@ -376,7 +376,7 @@ export const content = {
           featured: true,
           cta: {
             label: 'Request Personal',
-            href: 'mailto:contact@noematic.eu?subject=Media%20Cataloger%20%E2%80%94%20Personal%20license',
+            href: 'mailto:contact@noematic.eu?subject=DiskShelf%20(Media%20Cataloger)%20%E2%80%94%20Personal%20license',
           },
           includes: [
             'Unlimited local volumes',
@@ -394,7 +394,7 @@ export const content = {
           blurb: 'Remote hosts, content search, and image tags for a working archive.',
           cta: {
             label: 'Request Studio',
-            href: 'mailto:contact@noematic.eu?subject=Media%20Cataloger%20%E2%80%94%20Studio%20license',
+            href: 'mailto:contact@noematic.eu?subject=DiskShelf%20(Media%20Cataloger)%20%E2%80%94%20Studio%20license',
           },
           includes: [
             'Everything in Personal',
@@ -413,16 +413,24 @@ export const content = {
         'The catalog stays on your computer. Nothing is uploaded unless you opt into cloud vision or a RAG agent you run.',
         'This is not Time Machine, rsync, or a backup appliance. Coverage insights assume you copy files yourself, then re-walk.',
         '0.2 is beta: simple UX, advisor, RAG, remote, and trusted cleanup are in the product. Merge to the public mainline and packaged store builds are still in progress — fulfillment is email, not an app store.',
-        'iOS and Android are not part of this offer. macOS ships as a desktop app (Fyne, plus a native Swift shell). Windows and Linux are Fyne.',
-        'A license key exists in the app (About → Enter License). Feature locks for Hobby vs Personal vs Studio are being tightened; we honour the plan you buy.',
+        'iOS and Android are not part of this offer. macOS has two apps: Swift + nmcd (native) and nmcui (Go / Fyne). Windows and Linux are the Go build. One license opens all three.',
+        'A license key exists in the app (About → Enter License). The same file opens DiskShelf. Feature locks for Hobby vs Personal vs Studio are being tightened; we honour the plan you buy, including keys already emailed.',
       ],
     },
     faq: {
       title: 'Questions',
       items: [
         {
+          q: 'Media Cataloger or DiskShelf?',
+          a: 'One product. DiskShelf is the name. Media Cataloger remains the public 0.0.1 zip card on Qi. You are not buying two apps.',
+        },
+        {
+          q: 'I already have a Media Cataloger license (0.2 beta by email)?',
+          a: 'It still works. Any request and any license already sent open DiskShelf — Mac Swift, nmcui, and the Go build on Windows / Linux. A March buyer is not left out.',
+        },
+        {
           q: 'Is it open source?',
-          a: 'No. Media Cataloger is a proprietary desktop app from Noematic. Related studio tools such as the RAG agent have their own sites and licenses.',
+          a: 'No. DiskShelf is a proprietary desktop app from Noematic. Related studio tools such as the RAG agent have their own sites and licenses.',
         },
         {
           q: 'Does it need the internet?',
@@ -434,7 +442,7 @@ export const content = {
         },
         {
           q: 'How do I get the app?',
-          a: 'Email contact@noematic.eu with the plan you want (Hobby, Personal, Studio), your name, and your OS. We send a build and, for paid plans, a license key. The 0.0.1 public zips are still on Qi.',
+          a: 'Email contact@noematic.eu with the plan you want (Hobby, Personal, Studio), your name, and your OS. We send a build and, for paid plans, a license key. The 0.0.1 public zips stay on Qi (Media Cataloger) until a DiskShelf zip ships.',
         },
         {
           q: 'What is NeoFinder-like about it?',
@@ -447,7 +455,7 @@ export const content = {
       body: 'Hobby is enough to walk a volume and search it offline. Personal is the product. Studio is for remote hosts and content you actually query.',
       cta: {
         label: 'Email Noematic',
-        href: 'mailto:contact@noematic.eu?subject=Media%20Cataloger%20license',
+        href: 'mailto:contact@noematic.eu?subject=DiskShelf%20(Media%20Cataloger)%20license',
       },
     },
   } satisfies MediaCatalogerPage,
