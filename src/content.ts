@@ -46,9 +46,6 @@ export interface MediaCatalogerPage {
   nav: {
     studio: string;
     product: string;
-    langLabel: string;
-    langCode: string;
-    langHref: string;
   };
   hero: {
     kicker: string;
@@ -247,9 +244,6 @@ export const content = {
     nav: {
       studio: 'Noematic',
       product: 'DiskShelf',
-      langLabel: 'FR',
-      langCode: 'fr',
-      langHref: 'https://noematic.fr/media-cataloger',
     },
     hero: {
       kicker: 'DiskShelf · formerly Media Cataloger · beta 0.2',
